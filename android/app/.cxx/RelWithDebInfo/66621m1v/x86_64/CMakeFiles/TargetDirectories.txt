@@ -1,0 +1,2 @@
+A:/Programmazione/dnd_ambience_controller/android/app/.cxx/RelWithDebInfo/66621m1v/x86_64/CMakeFiles/edit_cache.dir
+A:/Programmazione/dnd_ambience_controller/android/app/.cxx/RelWithDebInfo/66621m1v/x86_64/CMakeFiles/rebuild_cache.dir
