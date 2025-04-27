@@ -14,8 +14,13 @@ class TrackProvider extends ChangeNotifier {
 
   void addTrack(Track track) {
     _tracks.add(track);
-    StorageService.saveTracks(_tracks);
-    notifyListeners();
+    try {
+      StorageService.saveTracks(_tracks);
+      notifyListeners();
+    } catch (e) {
+      _tracks.remove(track); // Rollback
+      rethrow; // Mostra l'errore nell'UI
+    }
   }
 
   void addTracks(List<Track> newTracks) {
